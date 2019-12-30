@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/mechanic_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f8fa"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="DETAILS FOR FINANCE"
+                android:textColor="#444445"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit score"
+                android:textAllCaps="true"
+                android:textColor="#c3c7cd" />
+
+            <EditText
+                android:fontFamily="@font/opensans_semibold"
+                android:id="@+id/edt_credit_score"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="15sp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/green_round_border"
+                android:hint="2132"
+                android:maxLines="1"
+                android:textColor="#444445"
+                android:textSize="15sp" />
+
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="loan amount"
+                android:textAllCaps="true"
+                android:textColor="#c3c7cd" />
+
+
+            <EditText
+                android:fontFamily="@font/opensans_semibold"
+                android:id="@+id/edt_loan_amt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/grey_round_border2"
+                android:hint="2500 $"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:textColor="#444445"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Tenure range"
+                android:textAllCaps="true"
+                android:textColor="#c3c7cd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/grey_round_border2"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/sp_tunner_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_spinner"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="interest rate range"
+                android:textAllCaps="true"
+                android:textColor="#c3c7cd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/grey_round_border2"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/sp_rate_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_spinner"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:id="@+id/txt_view_banks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3498DB"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="View Banks"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

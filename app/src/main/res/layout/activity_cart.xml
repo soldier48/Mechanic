@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/mechanic_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--recyclerview used-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:divider="#fff"
+                android:dividerHeight="0dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/linear"
+        android:layout_marginBottom="18.3dp"
+        android:background="#26454545" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8.7dp"
+        android:layout_marginRight="8.7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment amount"
+            android:textColor="#444445"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 500"
+            android:textColor="#444445"
+            android:textSize="16.7sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8.7dp"
+        android:background="@drawable/green_rectangle"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="CONTINUE"
+        android:textColor="#fff"
+        android:textSize="16.7sp" />
+
+</RelativeLayout>

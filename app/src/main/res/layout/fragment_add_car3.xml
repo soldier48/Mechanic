@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="51dp"
+        android:text="Car Insurance :"
+        android:textColor="#338df8"
+        android:textSize="14sp"
+        />
+
+    <LinearLayout
+        android:layout_width="247dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinner_background"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/sp_insuarance"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_spinner"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="33dp"
+        android:text="Insurance Validity :"
+        android:textColor="#338df8"
+        android:textSize="14sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:id="@+id/checkin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="10/09/2017"
+            android:textColor="#444445"
+            android:textSize="14sp" />
+
+        <!--<customfonts.MyTextView_OpenSans_SemiBold-->
+            <!--android:id="@+id/txt_check_in"-->
+            <!--android:layout_width="135dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@drawable/spinner_background"-->
+            <!--android:maxLines="1"-->
+            <!--android:paddingLeft="10dp" />-->
+
+
+        <TextView
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:text="to"
+            android:textColor="#aab0b9"
+            android:textSize="12.7sp" />
+
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:id="@+id/checkout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner_background"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_marginRight="29dp"
+            android:text="15/12/2017"
+            android:textColor="#444445"
+            android:textSize="14sp" />
+
+        <!--<customfonts.MyTextView_OpenSans_SemiBold-->
+            <!--android:id="@+id/txt_check_out"-->
+            <!--android:layout_width="135dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@drawable/spinner_background"-->
+            <!--android:maxLines="1"-->
+            <!--android:paddingLeft="10dp" />-->
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="33dp"
+        android:text="Broker Details :"
+        android:textColor="#338df8"
+        android:textSize="14sp" />
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="247dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinner_background"
+        android:hint="Kimani brokers"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="247dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinner_background"
+        android:maxLines="1"
+        android:paddingLeft="10dp" />
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

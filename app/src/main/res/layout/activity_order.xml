@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/mechanic_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suborder Id:"
+                android:textColor="#444445"
+                android:textSize="12.7sp" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="98562314"
+                android:textColor="#444445"
+                android:textSize="12.7sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placed On:"
+                android:textColor="#444445"
+                android:textSize="12.7sp" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03 nov,2017"
+                android:textColor="#444445"
+                android:textSize="12.7sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="96.3dp"
+            android:layout_height="120.7dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/guide" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deflection/Guide  Pulley,
+v-ribbed belt  "
+                android:textColor="#4b4b4b"
+                android:textSize="16.7dp" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sub Order Id : 943734298"
+                android:textColor="#aab0b9"
+                android:textSize="11sp" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/green_light_border_rect"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="Delivery Sucessfully!"
+                android:textColor="@color/dark_blue"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/opensans_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery On"
+                    android:textColor="#aab0b9"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:fontFamily="@font/opensans_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 March 2017"
+                    android:textColor="#444445"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15.3dp"
+        android:background="#e6e6e6" />
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progressBar1"-->
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:indeterminateOnly="false"-->
+    <!--android:progress="70"-->
+    <!--android:progressDrawable="@drawable/custom_progressbar" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_marginTop="15.3dp"-->
+    <!--android:background="#e6e6e6" />-->
+
+    <TextView
+        android:fontFamily="@font/opensans_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Rate and Review the product based on your experience."
+        android:textColor="#aab0b9"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+
+       <!-- <RatingBar
+            style="@style/customRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/star_color"
+            android:rating="4" />-->
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:theme="@style/RatingBar1"
+            android:rating="2.0" />
+
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:id="@+id/myTextView_OpenSans_Regular2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Write Review"
+            android:textColor="@color/dark_blue"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#e6e6e6" />
+
+
+</LinearLayout>

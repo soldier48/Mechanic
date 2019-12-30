@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PyMe</string>
+
+    <string name="reviews_text">100% Payment Protection, 7 days easy return in case item is defective or damaged or different from what was described.</string>
+
+    <string name="address">KYC-PAN, address &amp; ID proof</string>
+    <string name="deflection">Deflection/Guide Pulley, v-ribbed belt</string>
+    <string name="save">SAVE &amp; Continue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

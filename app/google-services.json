@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480122813744",
+    "firebase_url": "https://login-pyme.firebaseio.com",
+    "project_id": "login-pyme",
+    "storage_bucket": "login-pyme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480122813744:android:50f414ec8ff3c3bda59cf5",
+        "android_client_info": {
+          "package_name": "com.design.PyMe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480122813744-27b3459nidji4o8f2v5n5thmencppoml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.design.PyMe",
+            "certificate_hash": "63a8a6dbb250550a2c764b6e47793ad9d62b5d18"
+          }
+        },
+        {
+          "client_id": "480122813744-krmf94uo4eee9vf3bg1geq52nn3k35df.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkfnGQ4tTPlYPSWJ9mPRMdTNQs7nSHi3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480122813744-krmf94uo4eee9vf3bg1geq52nn3k35df.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

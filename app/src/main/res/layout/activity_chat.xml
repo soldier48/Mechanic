@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <include layout="@layout/mechanic_toolbar"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:backgroundTint="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <Extra.CustomTabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:tabTextColor="#b9dcf3"
+                android:background="#3498DB"
+                custom:tabSelectedTextColor="@color/Indicator_tabSelectedTextColor"
+                app:tabIndicatorHeight="4dp"
+                app:tabMode="scrollable"
+                app:tabGravity="fill"
+                android:elevation="5dp"
+                app:tabIndicatorColor="@color/tabIndicator_color"
+                android:letterSpacing=".08" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:tint="#3498DB"-->
+    <!--android:src="@drawable/search_btn"/>-->
+</RelativeLayout>

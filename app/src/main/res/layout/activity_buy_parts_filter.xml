@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/mechanic_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:elevation="2dp"
+            android:background="@drawable/rectangle2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_sortby"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#444445"
+                    android:background="@drawable/sort_by"/>
+
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Sort by"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#bebfc0"/>
+
+            <LinearLayout
+                android:id="@+id/linear_filters"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:backgroundTint="#444445"
+                    android:background="@drawable/filter"/>
+
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Filter"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:elevation="8dp"
+               android:orientation="horizontal">
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:padding="15dp">
+
+                   <ImageView
+                       android:layout_width="10dp"
+                       android:layout_height="10dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/sort_by"
+                       android:tint="#444445" />
+
+                   <customfonts.MyTextView_OpenSans_SemiBold
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:text="Sort by"
+                       android:textColor="#444445"
+                       android:textSize="14sp" />
+
+
+               </LinearLayout>
+
+               <View
+                   android:layout_width="0.5dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="6dp"
+                   android:layout_marginTop="6dp"
+                   android:background="#cecfd0" />
+
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:padding="15dp">
+
+                   <ImageView
+                       android:layout_width="10dp"
+                       android:layout_height="10dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/filter"
+                       android:tint="#444445" />
+
+                   <customfonts.MyTextView_OpenSans_SemiBold
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:text="Sort by"
+                       android:textColor="#444445"
+                       android:textSize="14sp" />
+
+
+               </LinearLayout>
+           </LinearLayout>-->
+
+
+        <!--recyclerview used-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="#fff"
+            android:dividerHeight="0dp"
+            android:paddingLeft="8.3dp"
+            android:paddingTop="11.7dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</LinearLayout>

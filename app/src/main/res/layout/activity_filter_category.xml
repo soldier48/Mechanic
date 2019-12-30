@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/mechanic_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#f6f6f6"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:background="#f6f6f6"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lineaar_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:orientation="horizontal">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:fontFamily="@font/opensans_regular"
+                                android:id="@+id/brand_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="1dp"
+                                android:gravity="center"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="Brand"
+                                android:textSize="15sp" />
+
+
+                            <ImageView
+                                android:id="@+id/right_arrow"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="right|center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/polygon_1"
+                                android:backgroundTint="@color/colorAccent"
+                                android:visibility="gone" />
+
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#e6e6e6" />
+
+
+                    <LinearLayout
+                        android:id="@+id/Linear_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:orientation="horizontal">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/opensans_regular"
+                                android:id="@+id/txt_brand_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="Model"
+                                android:textSize="16.5sp" />
+
+                            <ImageView
+                                android:id="@+id/model_right_arrow"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="right|center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/polygon_1"
+                                android:backgroundTint="@color/colorAccent"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#e6e6e6" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:orientation="horizontal">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:fontFamily="@font/opensans_regular"
+                                android:id="@+id/txt_fuel_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="1dp"
+                                android:gravity="center"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="Price"
+                                android:textSize="16.5sp" />
+
+                            <ImageView
+                                android:id="@+id/price_right_arrow"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="right|center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/polygon_1"
+                                android:backgroundTint="@color/colorAccent"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#e6e6e6" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:orientation="horizontal">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:fontFamily="@font/opensans_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="1dp"
+                                android:gravity="center"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="Discount"
+                                android:textSize="16.5sp" />
+
+
+                            <ImageView
+                                android:id="@+id/discount_right_arrow"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center|right"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/polygon_1"
+                                android:backgroundTint="@color/colorAccent"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#e6e6e6" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:fontFamily="@font/opensans_regular"
+                                android:id="@+id/txt_no_owners"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="1dp"
+                                android:gravity="center"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:text="Categories"
+                                android:textSize="16.5sp" />
+
+                            <ImageView
+                                android:id="@+id/categories_right_arrow"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center|right"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/polygon_1"
+                                android:backgroundTint="@color/colorAccent"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#e6e6e6" />
+
+                </LinearLayout>
+
+            </ScrollView>
+            <!--
+                    <View
+                        android:id="@+id/view"
+                        android:visibility="gone"
+                        android:layout_width="0.7dp"
+                        android:layout_height="70dp"
+                        android:background="#999999"/>-->
+
+            <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:fontFamily="@font/opensans_regular"
+            android:id="@+id/btn_resetall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Reset All"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="18.5dp" />
+
+        <Button
+            android:fontFamily="@font/opensans_regular"
+            android:id="@+id/btn_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18.5dp" />
+
+    </LinearLayout>
+</RelativeLayout>

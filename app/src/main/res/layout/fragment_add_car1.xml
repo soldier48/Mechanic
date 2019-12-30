@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+
+
+
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="51.3dp"
+        android:text="Car Maker :"
+        android:textColor="#338df8"
+        android:textSize="14sp"
+        />
+
+    <LinearLayout
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14.3dp"
+        android:background="@drawable/spinner_background"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/sp_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_spinner"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="33.3dp"
+        android:text="Car Model :"
+        android:textColor="#338df8"
+        android:textSize="14sp"
+        />
+    <LinearLayout
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinner_background"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sp_car_model"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_spinner"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="33dp"
+        android:text="Registration no (optional):"
+        android:textColor="#338df8"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_width="247dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:maxLines="1"
+        android:background="@drawable/spinner_background"
+        android:paddingLeft="10dp"
+        android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
